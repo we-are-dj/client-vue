@@ -19,4 +19,6 @@ jobs:
       with:
         node-version: 14
         cache: 'npm'
+    - run: yarn
+    - run: npm install -g @vue/cli
     - run: npm run build
