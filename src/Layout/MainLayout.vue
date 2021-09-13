@@ -34,7 +34,9 @@ export default {
     justify-content: center;
     width: 100%;
     background: #f9f9f9;
-    height: 620px;
+    height: 100%;
+    min-height: 620px;
+    margin-bottom: 10px;
 }
 .footer {
     display: flex;
