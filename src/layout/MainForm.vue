@@ -1,13 +1,16 @@
 <template>
-    <div>
-        <div>
-            <slot name="topLayout"></slot>
-        </div>
-        <div>
-            <slot name="bodyLayout"></slot>
-        </div>
-        <div>
-            <slot name="footerLayout"></slot>
+    <div style="border:1px solid red; width:100%;">
+        <!-- 화면 전체 레이아웃 설정해줄 예정 -->
+        <div style="display:flex; align-items:center; flex-direction:column;">
+            <div>
+                <slot name="topLayout"></slot>
+            </div>
+            <div>
+                <slot name="bodyLayout"></slot>
+            </div>
+            <div>
+                <slot name="footerLayout"></slot>
+            </div>
         </div>
     </div>
 </template>
