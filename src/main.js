@@ -4,6 +4,7 @@ import store from "./store";
 import router from "./router";
 import "@/style";
 
+
 const app = createApp(App);
 app.use(store);
 app.use(router);
