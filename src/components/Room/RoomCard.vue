@@ -1,11 +1,16 @@
 <template>
-    <div>
-        Hello Room Card
-    </div>
+    <room-card-layout>
+        <template v-slot:roomHaed></template>
+        <template v-slot:roomBody></template>
+        <template v-slot:roomFoot></template>
+    </room-card-layout>
 </template>
 
 <script>
-export default {};
+import RoomCardLayout from "../../layout/RoomCardLayout.vue";
+export default {
+    components: { RoomCardLayout },
+};
 </script>
 
 <style></style>
