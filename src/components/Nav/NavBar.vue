@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <div class="nav">
             <div class="logo">
                 <h1><a href="">Music</a></h1>
