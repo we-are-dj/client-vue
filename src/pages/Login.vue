@@ -10,7 +10,7 @@
                 <div class="discRight">
                     <h3>팀원 소개</h3>
                 </div>
-                <div class="discleft">
+                <div class="discLeft">
                     <h3>서비스 소개</h3>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                         width="222"
                     />
                 </a>
-                <button type="button" @click="kakaoLogout">카카오 로그아웃</button>
+                <button type="button" @click="kakaoLogout">로그아웃</button>
             </div>
         </div>
 
@@ -91,6 +91,10 @@ export default {
     .logoBox{
         width: 80%;
         background-color: #212020;
+        h1 a{
+            display: block;
+            color: #fff;
+        }
     }
     .discBox{
         width: 80%;
@@ -98,6 +102,16 @@ export default {
         justify-content: center;
         align-items: center;
         background-color: #212020;
+        .discRight{
+            h3{
+                color: #fff
+            }
+        }
+        .discLeft{
+            h3{
+                color: #fff
+            }
+        }
     }
     .kakao{
         width: 80%;
