@@ -1,9 +1,7 @@
 <template>
-    <div>
+    <div class="continer">
         <!-- 중앙 css 정리 및 레이아웃 해야함 -->
-        <div v-for="item in 10" :key="item.id">
-            <room-card />
-        </div>
+        <room-card v-for="item in 10" :key="item.id" />
     </div>
 </template>
 
@@ -14,4 +12,12 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.continer {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+</style>

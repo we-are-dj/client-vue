@@ -5,7 +5,7 @@
             <div>
                 <slot name="topLayout"></slot>
             </div>
-            <div>
+            <div class="mainContainer">
                 <slot name="bodyLayout"></slot>
             </div>
             <div>
@@ -19,4 +19,10 @@
 export default {};
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+</style>
