@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import FooterBar from "../components/Foot/FooterBar.vue";
+import MainForm from "../layout/MainForm.vue";
 import NavBar from "../components/Nav/NavBar.vue";
 import RoomContnet from "../components/Room/RoomContnet.vue";
-import MainForm from "../layout/MainForm.vue";
+import FooterBar from "../components/Foot/FooterBar.vue";
 
 export default {
     components: { MainForm, RoomContnet, NavBar, FooterBar },
