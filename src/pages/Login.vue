@@ -47,6 +47,8 @@ export default {
         scope: "profile",
         success: this.getKakaoAccount,
       });
+        // 메인 페이지로 이동
+        this.$router.push('/main');
     },
     getKakaoAccount() {
       window.Kakao.API.request({
