@@ -25,8 +25,4 @@ export default {};
     justify-content: center;
     width: 80%;
 }
-.NavBar{
-    width:100%;
-    height: 70px;
-}
 </style>

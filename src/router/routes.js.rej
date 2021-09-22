@@ -1,0 +1,9 @@
+diff a/src/router/routes.js b/src/router/routes.js	(rejected hunks)
+@@ -1,6 +1,6 @@
+ const routes = [
+     {
+-        path: '/',
++        path: '/login',
+         name: 'Login',
+         component: () => import("@/pages/LoginPage.vue")
+     },

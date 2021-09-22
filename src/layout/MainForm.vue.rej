@@ -1,0 +1,10 @@
+diff a/src/layout/MainForm.vue b/src/layout/MainForm.vue	(rejected hunks)
+@@ -25,4 +25,8 @@
+     justify-content: center;
+     width: 80%;
+ }
++.NavBar{
++    width:100%;
++    height: 70px;
++}
+ </style>

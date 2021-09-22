@@ -1,0 +1,17 @@
+diff a/src/components/Nav/NavBar.vue b/src/components/Nav/NavBar.vue	(rejected hunks)
+@@ -15,7 +15,14 @@
+ </template>
+ 
+ <script>
+-export default {};
++export default {
++    data() {
++        return{}
++    },
++    methods:{},
++    create() {}
++
++};
+ </script>
+ 
+ <style lang="scss" scoped>
