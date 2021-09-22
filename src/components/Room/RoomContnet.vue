@@ -28,5 +28,10 @@ export default {
     overflow-x:scroll;
     height:600px;
     width:100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 </style>
