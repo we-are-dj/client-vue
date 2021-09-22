@@ -19,7 +19,8 @@ import RoomContnet from "../components/Room/RoomContnet.vue";
 import FooterBar from "../components/Foot/FooterBar.vue";
 
 export default {
-    components: { MainForm, RoomContnet, NavBar, FooterBar },
+    //,
+    components: { MainForm, NavBar, RoomContnet, FooterBar },
 };
 </script>
 
