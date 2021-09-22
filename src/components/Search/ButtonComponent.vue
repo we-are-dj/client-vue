@@ -21,6 +21,8 @@ button {
     width: 80px;
     font-size: 14px;
     margin: 3px;
+    cursor: pointer;
+    margin-left: 20px;
 }
 button:active {
     background: pink;
