@@ -21,7 +21,7 @@
                         width="222"
                     />
                 </a> -->
-                <button type="button" @click="kakaoLogout">로그아웃</button>
+                <!-- <button type="button" @click="kakaoLogout">로그아웃</button> -->
             </div>
         </div>
 

@@ -15,7 +15,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+    data() {
+        return{}
+    },
+    methods:{},
+    create() {}
+
+};
 </script>
 
 <style lang="scss" scoped>
