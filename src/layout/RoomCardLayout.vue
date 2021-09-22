@@ -18,9 +18,9 @@ export default {};
 
 <style lang="scss" scoped>
 .cardLayout {
-    border: 1px solid red;
+    border: 1px solid blue;
     margin: 10px;
-    height: 150px;
+    height: 180px;
     width: 80%;
     display: flex;
     align-items: center;
