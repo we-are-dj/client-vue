@@ -2,13 +2,13 @@
     <div class="container">
         <div class="nav">
             <div class="logo">
-                <h1><a href=""><router-link to="/">Music</router-link></a></h1>
+                <h1><a><router-link to="/main">Music</router-link></a></h1>
             </div>
             <ul>
-                <li><a href=""><router-link to ="/login">메뉴1</router-link></a></li>
-                <li><a href="">메뉴2</a></li>
-                <li><a href="">메뉴3</a></li>
-                <li><a href="">메뉴4</a></li>
+                <li><a><router-link to ="#">메뉴1</router-link></a></li>
+                <li><a><router-link to ="#">메뉴2</router-link></a></li>
+                <li><a><router-link to ="#">메뉴3</router-link></a></li>
+                <li><a><router-link to ="#">메뉴4</router-link></a></li>
             </ul>
         </div>
     </div>
