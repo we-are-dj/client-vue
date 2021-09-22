@@ -3,10 +3,10 @@
 </template>
 
 <script>
-import MainPage from "./pages/MainPage.vue";
+// import MainPage from "./pages/MainPage.vue";
 export default {
     name: "App",
-    components: { MainPage },
+    components: {  },
 };
 </script>
 
