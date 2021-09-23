@@ -1,7 +1,7 @@
 <template>
   <room-card-layout style="margin: 0 auto; margin-top: 10px;">
     <template v-slot:roomHead>
-      <div style="display:flex; border:1px solid blue; width:100%;">
+      <div style="display:flex;  width:100%;">
         <div style="width:50%; text-align:center;">Title</div>
         <div style="width:50%; text-align:center;">1/6</div>
       </div>
@@ -15,6 +15,12 @@
         </div>
         <div style="width:60%; border:1px solid black; text-align:center;">
           내용
+          <div>
+            <router-link to="/room/1">
+              <!-- 라우팅 주소 동적으로 할당할 예정. -->
+              <button>입장</button>
+            </router-link>
+          </div>
         </div>
       </div>
     </template>

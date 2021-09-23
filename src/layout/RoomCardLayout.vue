@@ -18,7 +18,7 @@ export default {};
 
 <style lang="scss" scoped>
 .cardLayout {
-  border: 1px solid blue;
+  border: 2px solid #ddd;
   margin: 10px;
   height: 180px;
   width: 80%;
