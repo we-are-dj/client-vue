@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="body">
         <div class="wrap">
             <div class="logoBox">
                 <div class="logo">
@@ -9,9 +9,22 @@
             <div class="discBox">
                 <div class="discRight">
                     <h3>팀원 소개</h3>
+                    <p>
+                        프론트엔드: <a href="https://github.com/we-are-dj/client-vue" target="_blank">Go to Frontend GitHub.</a>
+                    </p>
+                    <p>
+                        백엔드: <a href="https://github.com/we-are-dj/server" target="_blank">Go to Backend GitHub.</a>
+                    </p>
                 </div>
                 <div class="discLeft">
                     <h3>서비스 소개</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quasi recusandae omnis, modi laudantium soluta, harum eos
+                        voluptate est voluptatem accusamus iusto magnam delectus
+                        expedita nesciunt veniam deleniti accusantium minima.
+                        Similique.
+                    </p>
                 </div>
             </div>
             <div class="kakao">
@@ -88,12 +101,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.body{
+    background-color: rgb(246, 246, 246);
+    height: 100vh;
+}
 .wrap{
     width: 70%;
     margin: 0 auto;
     padding: 10px;
+    padding-top: 100px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: rgb(246, 246, 246);
     text-align: center;
     .logoBox{
         width: 80%;
@@ -113,20 +131,42 @@ export default {
         width: 80%;
         height: 300px;
         margin: 0 auto;
-        margin-top: 30px;
+        margin-top: 50px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         border-radius: 10px;
         background-color: #242323;
+        color: #fff;
         .discRight{
+            width: 48%;
             h3{
-                color: #fff
+                color: #fff;
+                margin-bottom: 30px;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            p{
+                text-align: left;
+                margin-left: 10px;
+                padding: 10px;
+                a{
+                    color: #ddd;
+                }
+                a:hover{
+                    color: #fff;
+                    font-weight: bold;
+                    transition: all 0.3s;
+                }
             }
         }
         .discLeft{
+            width: 48%;
             h3{
-                color: #fff
+                color: #fff;
+                margin-bottom: 30px;
+                font-size: 18px;
+                font-weight: bold;
             }
         }
     }
@@ -152,6 +192,11 @@ export default {
             font-weight: bold;
             font-size: 16px;
             color: rgb(54, 0, 0);
+        }
+        button:hover{
+            background-color: rgb(253, 250, 43);
+            box-shadow: 3px 3px 8px #ddd;
+            transition: all 0.3s;
         }
     }
 }
