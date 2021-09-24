@@ -147,7 +147,6 @@ export default {
                 font-weight: bold;
             }
             p{
-                text-align: left;
                 margin-left: 10px;
                 padding: 10px;
                 a{
