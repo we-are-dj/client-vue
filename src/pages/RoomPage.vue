@@ -15,13 +15,14 @@ export default {
             console.log("HI");
         },
     },
-    create() {
-        const callTestList = () => {
-            this.$store.dispatch("test");
+    created() {
+        const callTestList = (pageNo) => {
+            this.$store.dispatch(`test`);
+            console.log(pageNo);
         };
         console.log("==>", callTestList);
-        callTestList();
-        this.testFunction;
+        callTestList(1);
+        this.testFunction();
     },
 };
 </script>

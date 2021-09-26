@@ -1,9 +1,10 @@
 import api from "./api";
 export default {
-    test({ commit }) {
+    test({ commit }, params) {
+        console.log("test ==>");
         return api
-            .test()
-            .then((data) => commit("testList", data))
+            .test(params)
+            .then((data) => commit("testList", data.data))
             .catch((err) => {
                 console.error(err, "testAPI Fail");
             });
