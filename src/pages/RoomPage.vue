@@ -16,9 +16,9 @@ export default {
         },
     },
     created() {
-        const callTestList = (pageNo) => {
+        const callTestList = () => {
             this.$store.dispatch(`test`);
-            console.log(pageNo);
+            console.log("test");
         };
         console.log("==>", callTestList);
         callTestList(1);
