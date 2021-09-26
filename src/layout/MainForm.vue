@@ -2,7 +2,7 @@
     <div style="border:1px solid red;">
         <!-- 화면 전체 레이아웃 설정해줄 예정 -->
         <div style="display:flex; align-items:center; flex-direction:column;">
-            <div style="width:100%">
+            <div class="NavBar">
                 <slot name="topLayout"></slot>
             </div>
             <div class="mainContainer">
@@ -24,5 +24,9 @@ export default {};
     display: flex;
     justify-content: center;
     width: 80%;
+}
+.NavBar{
+    width:100%;
+    height: 70px;
 }
 </style>

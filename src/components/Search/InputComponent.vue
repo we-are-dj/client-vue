@@ -18,7 +18,7 @@ input {
     font-size: 14px;
     padding: 8px;
     border: 0px;
-    border-bottom: 2px solid #ddd;
+    box-shadow: 2px 2px 5px #ddd;
     margin: 3px;
 }
 </style>

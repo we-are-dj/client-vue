@@ -11,6 +11,4 @@ export default {
         ...mapGetters(["getTestList"]),
     },
 };
-</script>
-
 <style></style>
