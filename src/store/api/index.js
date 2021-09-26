@@ -9,7 +9,7 @@ export default {
     test: () => {
         return new Promise((resolve, reject) => {
             axios
-                .get(`${API.baseURL}/v1/music/rooms`)
+                .get(`${API}/v1/music/rooms`)
                 .then((data) => resolve(data))
                 .catch((err) => {
                     reject(err);
