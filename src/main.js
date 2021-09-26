@@ -10,8 +10,8 @@ const app = createApp(App);
 app.use(store);
 app.use(router);
 app.use(VueCookies, {
-  expireTImes: "30d",
-  path: "/",
+    expireTImes: "30d",
+    path: "/",
 });
 //app.use(VueCookies);
 app.mount("#app");
