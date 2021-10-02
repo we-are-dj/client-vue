@@ -1,0 +1,98 @@
+.body{
+  background-color: rgb(246, 246, 246);
+  height: 100vh;
+}
+.wrap{
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 100px;
+  border-radius: 10px;
+  background-color: rgb(246, 246, 246);
+  text-align: center;
+  .logoBox{
+      width: 80%;
+      margin: 0 auto;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #212020;
+      border-radius: 10px;
+      h1 a{
+          display: block;
+          color: #fff;
+      }
+  }
+  .discBox{
+      width: 80%;
+      height: 300px;
+      margin: 0 auto;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 10px;
+      background-color: #242323;
+      color: #fff;
+      .discRight{
+          width: 48%;
+          h3{
+              color: #fff;
+              margin-bottom: 30px;
+              font-size: 18px;
+              font-weight: bold;
+          }
+          p{
+              margin-left: 10px;
+              padding: 10px;
+              a{
+                  color: #ddd;
+              }
+              a:hover{
+                  color: #fff;
+                  font-weight: bold;
+                  transition: all 0.3s;
+              }
+          }
+      }
+      .discLeft{
+          width: 48%;
+          h3{
+              color: #fff;
+              margin-bottom: 30px;
+              font-size: 18px;
+              font-weight: bold;
+          }
+      }
+  }
+  .kakao{
+      width: 80%;
+      margin: 0 auto;
+      a{
+          width: 220px;
+          height: 45px;
+          margin: 0 auto;
+          display: block;
+          margin-top: 20px;
+          cursor: pointer;
+      }
+      button{
+          width: 220px;
+          height: 45px;
+          border-radius: 5px;
+          border: none;
+          background-color: rgb(248, 244, 0);
+          cursor: pointer;
+          margin-top: 20px;
+          font-weight: bold;
+          font-size: 16px;
+          color: rgb(54, 0, 0);
+      }
+      button:hover{
+          background-color: rgb(253, 250, 43);
+          box-shadow: 3px 3px 8px #ddd;
+          transition: all 0.3s;
+      }
+  }
+}
