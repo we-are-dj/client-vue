@@ -58,4 +58,13 @@ export default {
 td {
     padding: 10px;
 }
+table{
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+    border: 1px solid red;
+    td{
+        border: 1px solid black;
+    }
+}
 </style>
