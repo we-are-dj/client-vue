@@ -1,21 +1,17 @@
 <template>
-    <room-card-layout style="margin: 0 auto; margin-top: 10px;">
+    <room-card-layout class="RoomCardLayout">
         <template v-slot:roomHead>
-            <div style="display:flex;  width:100%;">
-                <div style="width:50%; text-align:center;">Title</div>
-                <div style="width:50%; text-align:center;">1/6</div>
+            <div class="title-box">
+                <div class="title">Title</div>
+                <div class="join-person">1/6</div>
             </div>
         </template>
         <template v-slot:roomBody>
-            <div style="display:flex;">
-                <div
-                    style="width:40%; border:1px solid red; height:120px; text-align:center;"
-                >
+            <div class="RoomContentsBox">
+                <div class="RoomContentsThubNail">
                     썸네일
                 </div>
-                <div
-                    style="width:60%; border:1px solid black; text-align:center;"
-                >
+                <div class="RoomContents">
                     내용
                     <div>
                         <router-link to="/room">
@@ -37,4 +33,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+@import "./RoomCard.scss";
+</style>
