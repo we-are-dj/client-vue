@@ -1,13 +1,36 @@
 <template>
   <div>
-    <room-card />
+    <table>
+      <thead></thead>
+      <tbody>
+        <tr v-for="item in 10" :key="item.id">
+          <td>
+            1
+          </td>
+          <td>
+            2
+          </td>
+          <td>
+            3
+          </td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
   </div>
 </template>
 
 <script>
-import RoomCard from "../components/Room/RoomCard.vue";
 export default {
-  components: { RoomCard },
+  data() {
+    return {
+      nullPoint: "",
+    };
+  },
+  computed: {},
+  methods: {},
+
+  created() {},
 };
 </script>
 

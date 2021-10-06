@@ -1,20 +1,20 @@
 <template>
   <room-card-layout
     class="RoomCardLayout"
-    v-for="item in getTestList"
-    :key="item.roomId"
+    v-for="item in list"
+    :key="item[roomNo]"
   >
     <template v-slot:roomHead>
       <div class="title-box">
-        <div class="title">{{ item.roomName }}</div>
-        <div class="join-person">{{ item.roomUserCount }}</div>
+        <div class="title">{{ item[name] }}</div>
+        <div class="join-person">{{ item[count] }}</div>
       </div>
     </template>
     <template v-slot:roomBody>
       <div class="RoomContentsBox">
         <div class="RoomContentsThubNail">썸네일</div>
         <div class="RoomContents">
-          {{ nullCheck(item.musicRoomNo) }}
+          {{ nullCheck(item[roomNo]) }}
           <div>
             <router-link to="/room">
               <!-- 라우팅 주소 동적으로 할당할 예정. -->
@@ -30,32 +30,38 @@
 
 <script>
 import RoomCardLayout from "../../layout/RoomCardLayout.vue";
-import { mapGetters } from "vuex";
+
 export default {
   components: { RoomCardLayout },
+  props: {
+    name: {
+      type: String,
+      default: "",
+    },
+    count: {
+      type: String,
+      default: "",
+    },
+    roomNo: {
+      type: String,
+      default: "",
+    },
+    list: {
+      type: Array,
+    },
+  },
   data() {
     return {
       nullPoint: "",
     };
   },
-  computed: {
-    ...mapGetters(["getTestList"]),
-  },
   methods: {
-    callTestList(params) {
-      this.$store.dispatch(`test`, params);
-      console.log(params);
-    },
     nullCheck(params) {
       if (params === null) {
         this.nullPoint = "NULL";
       }
       return this.nullPoint;
     },
-  },
-
-  created() {
-    this.callTestList(3);
   },
 };
 </script>
