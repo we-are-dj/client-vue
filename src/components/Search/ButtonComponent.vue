@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <button @click="clickEvent('hello')">
-            <slot name="buttonName"></slot>
-        </button>
-    </div>
+    <button @click="clickEvent('hello')">
+        <slot name="buttonName"></slot>
+    </button>
 </template>
 
 <script>

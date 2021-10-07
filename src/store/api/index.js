@@ -8,4 +8,12 @@ export default {
                 console.error(err, "API CALL FAIL");
             });
     },
+    roomCreate: (param) => {
+        return instance
+            .post(`/v1/music/room`, param)
+            .then((res) => res.data)
+            .catch((err) => {
+                console.error(err, "API CALL FAIL");
+            });
+    },
 };

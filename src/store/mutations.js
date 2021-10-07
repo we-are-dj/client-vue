@@ -3,4 +3,8 @@ export default {
         console.log(data);
         state.testItems = data;
     },
+    setRoomCreate(state, data) {
+        console.log(data);
+        console.log(state);
+    },
 };

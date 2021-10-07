@@ -14,6 +14,10 @@ const routes = [
         // name: "room", // 솔직히 name router 쓸거 아니면 name 없어도 됨.
         component: () => import("@/pages/RoomPage.vue"),
     },
+    {
+        path: "/room/create",
+        component: () => import("@/pages/RoomCreatePage.vue"),
+    },
 ];
 
 export default routes;
