@@ -1,15 +1,16 @@
 <template>
     <div style="margin:100px;">
         <div>
-            <label for="roomName">방제목 : </label>
+            <label for="name">방제목 : </label>
             <input
-                id="roomName"
-                type="text  "
+                id="name"
+                type="text"
                 placeholder="방 제목을 입력해주세요."
+                v-model="room.roomName"
             />
         </div>
         <div>
-            <button-component>
+            <button-component :room="room">
                 <template v-slot:buttonName>생성</template>
             </button-component>
         </div>
@@ -22,6 +23,13 @@ import ButtonComponent from "../Search/ButtonComponent.vue";
 
 export default {
     components: { ButtonComponent },
+    data() {
+        return {
+            room: {
+                roomName: "",
+            },
+        };
+    },
 };
 </script>
 

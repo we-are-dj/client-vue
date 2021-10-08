@@ -28,7 +28,7 @@ export default {
     },
     methods: {
         callTestList(params) {
-            this.$store.dispatch(`test`, params);
+            this.$store.dispatch(`rommListCall`, params);
             console.log(params);
         },
     },

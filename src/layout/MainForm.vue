@@ -1,5 +1,5 @@
 <template>
-    <div style="border:1px solid red;">
+    <div>
         <!-- 화면 전체 레이아웃 설정해줄 예정 -->
         <div style="display:flex; align-items:center; flex-direction:column;">
             <div class="NavBar">
@@ -25,8 +25,8 @@ export default {};
     justify-content: center;
     width: 80%;
 }
-.NavBar{
-    width:100%;
+.NavBar {
+    width: 100%;
     height: 70px;
 }
 </style>

@@ -1,12 +1,29 @@
 <template>
-    <button @click="clickEvent('hello')">
+    <button @click="clickEvent(room)">
         <slot name="buttonName"></slot>
     </button>
 </template>
 
 <script>
+import { mapActions } from "vuex";
 export default {
-    props: ["clickEvent"],
+    props: {
+        room: {
+            type: Object,
+        },
+    },
+    methods: {
+        ...mapActions(["roomCreate"]),
+        async clickEvent(params) {
+            console.log("this.name", this.room);
+            try {
+                await this.roomCreate(params);
+                //this.$store.dispatch("roomCreate", params);
+            } catch (err) {
+                console.error(err, "API CALL FAILURE");
+            }
+        },
+    },
 };
 </script>
 
