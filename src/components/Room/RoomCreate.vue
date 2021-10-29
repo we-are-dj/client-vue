@@ -1,6 +1,6 @@
 <template>
     <div style="margin:100px;">
-        <div>
+        <div class="flex">
             <label for="name">방제목 : </label>
             <input
                 id="name"
@@ -8,11 +8,11 @@
                 placeholder="방 제목을 입력해주세요."
                 v-model="room.roomName"
             />
-        </div>
-        <div>
-            <button-component :room="room">
-                <template v-slot:buttonName>생성</template>
-            </button-component>
+            <div>
+                <button-component :room="room">
+                    <template v-slot:buttonName>생성</template>
+                </button-component>
+            </div>
         </div>
         <div></div>
     </div>
@@ -33,4 +33,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+
+</style>

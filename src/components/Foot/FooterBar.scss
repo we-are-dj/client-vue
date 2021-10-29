@@ -1,0 +1,21 @@
+.footer_wrap{
+  width: 100%;
+  background: #1a1a1a;
+  padding: 1rem 0;
+  color: #fff;
+  .f_inner{
+    width: calc( 100% - 600px );
+    margin: 0 auto;
+    .f_inner_top{
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      border-bottom: 1px solid #fff;
+    }
+    .f_inner_bot{
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  }
+}

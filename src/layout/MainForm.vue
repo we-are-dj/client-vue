@@ -8,7 +8,7 @@
             <div class="mainContainer">
                 <slot name="bodyLayout"></slot>
             </div>
-            <div>
+            <div class="footer_layout">
                 <slot name="footerLayout"></slot>
             </div>
         </div>
@@ -28,5 +28,8 @@ export default {};
 .NavBar {
     width: 100%;
     height: 70px;
+}
+.footer_layout{
+    width: 100%;
 }
 </style>
