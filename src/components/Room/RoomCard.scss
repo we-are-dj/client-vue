@@ -1,0 +1,30 @@
+.RoomCardLayout{
+  margin: 0 auto;
+  margin-top: 10px;
+  .title-box{
+    display: flex;
+    width: 100%;
+    .title{
+      text-align: center;
+      width: 50%;
+    }
+    .join-person{
+      width: 50%;
+      text-align: center;
+    }
+  }
+  .RoomContentsBox{
+    display: flex;
+    .RoomContentsThubNail{
+      width: 40%;
+      border: 1px solid red;
+      height: 120px;
+      text-align: center;
+    }
+    .RoomContents{
+      width: 60%;
+      border:1px solid black;
+      text-align:center;
+    }
+  }
+}

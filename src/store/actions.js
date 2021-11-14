@@ -1,12 +1,14 @@
 import api from "./api";
 export default {
-    test({ commit }, params) {
-        console.log("test");
+    rommListCall({ commit }, params) {
         return api
-            .test(params)
+            .rommListCall(params)
             .then((data) => commit("testList", data.data))
             .catch((err) => {
                 console.error(err, "testAPI Fail");
             });
+    },
+    roomCreate({ params }) {
+        return api.roomCreate(params);
     },
 };

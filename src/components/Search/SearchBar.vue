@@ -1,7 +1,7 @@
 <template>
     <div class="searchContainer">
         <input-component />
-        <button-component :clickEvent="clickEvent">
+        <button-component>
             <template v-slot:buttonName>
                 검색
             </template>
@@ -15,11 +15,7 @@ import InputComponent from "./InputComponent.vue";
 
 export default {
     components: { ButtonComponent, InputComponent },
-    methods: {
-        clickEvent(text) {
-            console.log(text);
-        },
-    },
+    methods: {},
 };
 </script>
 
