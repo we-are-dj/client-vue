@@ -39,19 +39,32 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .continer {
     position: relative;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    button{
+        width: 85px;
+        height: 35px;
+        background: rgb(24, 23, 23);
+        color: #fff;
+        font-size: .9em;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #ddd;
+        cursor: pointer;
+    }
 }
 .RoomCardContent {
     overflow-x: scroll;
-    height: 600px;
     width: 100%;
+    height: 100vh;
+    background: rgb(250, 250, 250);
+    box-shadow: inset 2px 2px 10px rgb(212, 212, 212);
     scrollbar-width: none;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
